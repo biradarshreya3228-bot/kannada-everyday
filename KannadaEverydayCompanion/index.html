@@ -1,0 +1,76 @@
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kannada Everyday Companion</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+  <header>
+    <h1>ನಮಸ್ಕಾರ! Namaskara 👋</h1>
+    <p>Your Kannada Everyday Companion</p>
+    <p>Learn Kannada for real-life situations.</p>
+  </header>
+
+  <main>
+    <section class="intro">
+      <h2>Where do you want to use Kannada?</h2>
+      <p>Choose a situation to learn useful phrases.</p>
+    </section>
+
+    <nav id="categories">
+      <button data-category="Travel">🚌 Travel</button>
+      <button data-category="Shopping">🛍️ Shopping</button>
+      <button data-category="Hospital">🏥 Hospital</button>
+      <button data-category="College">🎓 College</button>
+      <button data-category="Workplace">💼 Workplace</button>
+    </nav>
+    <button id="show-favorites">Favorites</button>
+
+    <input
+      type="text"
+      id="search"
+      placeholder="Search for a Kannada phrase..."
+      aria-label="Search phrases"
+    >
+
+    <section>
+      <h2 id="section-title">Useful Kannada Phrases</h2>
+      <div id="phrase-list"></div>
+      <p id="message"></p>
+    </section>
+<section class="flashcards">
+  <h2>🃏 Kannada Flashcards</h2>
+  <p>Learn everyday Kannada words!</p>
+
+  <div id="flashcard">
+    <h3 id="flashcard-word">ನಮಸ್ಕಾರ</h3>
+    <p id="flashcard-pronunciation">Namaskara</p>
+    <p id="flashcard-meaning" hidden>Hello / Greetings</p>
+  </div>
+
+  <button id="reveal-card">👀 Reveal Meaning</button>
+  <button id="previous-card">← Previous</button>
+  <button id="next-card">Next →</button>
+<button id="learned-card">✅ Mark as Learned</button>
+<p id="learned-count">Learned: 0</p>
+<button id="show-learned">📚 Learned Words</button>
+  <p id="flashcard-count">Card 1</p>
+</section>
+    <section class="quiz">
+      <h2>🎯 Quick Practice</h2>
+      <p id="question">What does "ನಮಸ್ಕಾರ" mean?</p>
+      <div id="quiz-options"></div>
+      <p id="quiz-result" aria-live="polite"></p>
+      <button id="next-question">Next Question →</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>Made with ❤️ to make Kannada easier for everyone.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
